@@ -308,4 +308,7 @@
   #bgcolor .portfolio .portfolioframe .portfoliocontent .portfoliobox {
     width: 80vw;
   }
+  #bgcolor footer .connect {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=portfolio.css.map */

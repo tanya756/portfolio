@@ -271,4 +271,53 @@ body footer .connect a:hover .icon, body footer .connect a:hover p {
 body footer .copyright {
   font-size: 0.75em;
   padding: 12px;
+}
+
+@media screen and (max-width: 1040px) {
+  body .wrap {
+    width: 100%;
+  }
+  body .wrap .reason, body .wrap .goal, body .wrap .process {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body header {
+    background-image: url(../images/uiux-bus-00-768.png);
+  }
+  body .wrap .reason, body .wrap .goal, body .wrap .process {
+    padding: 4%;
+  }
+  body .wrap .reason .pic {
+    flex-wrap: wrap;
+  }
+  body .wrap .reason .pic .picbox {
+    width: 80%;
+    margin-top: 50px;
+  }
+  body .wrap .reason .pic .picbox:nth-child(2) {
+    margin: 50px 4% 0 4%;
+  }
+  body .wrap .process .picwrap {
+    flex-wrap: wrap;
+  }
+  body .wrap .process .picwrap .text {
+    width: 100%;
+  }
+  body .wrap .process .picwrap img {
+    width: 80%;
+    margin: 50px auto 0 auto;
+  }
+  body .wrap .process .picwrap02 .text {
+    padding-right: 0;
+  }
+  body .wrap .process .picwrap02 .imgbox {
+    flex-wrap: wrap;
+  }
+  body .wrap .process .picwrap02 .imgbox img {
+    width: 80%;
+  }
+  body .wrap .process .picwrap02 .imgbox img:nth-child(2) {
+    margin: 50px 4% 0 4%;
+  }
 }/*# sourceMappingURL=uiux-bus.css.map */

@@ -1,17 +1,17 @@
 @import url("reset.css");
 
 
-  $color-primary: #fbdce2;
-  $color-secondary: #062275;
-  $color-white : #fff;
-  $color-darkgrey : #474041;
-  $color-grey :#9e9e9e;
-  $color-black : #000;
-  $color-pink :#b76474;
-  $color-blue-900: #3955a9;
-  $color-blue-800: #7a90d1;
-  $color-blue-700: #afbfee;
-  $color-blue-600: #e4ebff;
+$color-primary: #fbdce2;
+$color-secondary: #062275;
+$color-white : #fff;
+$color-darkgrey : #474041;
+$color-grey :#9e9e9e;
+$color-black : #000;
+$color-pink :#b76474;
+$color-blue-900: #3955a9;
+$color-blue-800: #7a90d1;
+$color-blue-700: #afbfee;
+$color-blue-600: #e4ebff;
 
 
 body{ 
@@ -305,6 +305,71 @@ body{
         .copyright {
             font-size: 0.75em;
             padding: 12px;
+        }
+    }
+}
+
+@media screen and (max-width:1040px) {
+    body{
+        .wrap{
+            width: 100%;
+            .reason,.goal,.process{
+                padding: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    body{
+        header{
+            background-image: url(../images/uiux-bus-00-768.png);
+        }
+        .wrap{
+            .reason,.goal,.process{
+                padding: 4%;
+            }
+            .reason{
+                .pic{
+                    flex-wrap: wrap;
+                    .picbox{
+                        width: 80%;
+                        margin-top: 50px;
+                    }
+                    .picbox:nth-child(2){
+                        margin: 50px 4% 0 4%;
+                    }
+                }
+            }
+            .process{
+                .picwrap{
+                    flex-wrap: wrap;
+                    .text{
+                        width: 100%;
+                    }
+                    img{
+                        width: 80%;
+                        margin: 50px auto 0 auto;
+                    }
+                }
+                .picwrap02{
+                    .text{
+                        padding-right: 0;
+                    }
+                    .imgbox{
+                        flex-wrap: wrap;
+                        img{
+                            width: 80%;
+                        }
+                        img:nth-child(2){
+                            margin: 50px 4% 0 4%;
+                        }
+                    }
+                }
+                // .picwrap03{
+
+                // }
+            }
         }
     }
 }

@@ -216,6 +216,9 @@ body .wrap .process .picwrap03 .imgbox img:nth-child(1) {
 body .wrap .process .picwrap03 .imgbox img:nth-child(2) {
   border-right: 1px solid #000;
 }
+body .wrap .process .picwrap04 .text h3 {
+  width: 215px;
+}
 body .wrap .process .picwrap04 img {
   width: 80%;
   margin: auto;

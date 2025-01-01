@@ -1,446 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="theme-color" content="#062275" />
-  <meta name="format-detection" content="telephone=no" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#062275" />
+    <meta name="format-detection" content="telephone=no" />
 
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
 
-  <link rel="shortcut icon" href="images/favicon.ico" />
-  <link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-  <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-  <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"> 
-  <title>Tanya's Portfolio</title>
-  <meta property="og:title" content="Tanya's Portfolio" />
-  <meta name="twitter:title" content="Tanya's Portfolio" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Tanya's Portfolio</title>
+    <meta property="og:title" content="Tanya's Portfolio" />
+    <meta name="twitter:title" content="Tanya's Portfolio" />
 
-  <meta property="og:type" content="website" />
-  <meta name="description" content="我是Tanya，擁有十多年網頁設計工作經驗，曾在多家企業擔任設計師。瀏覽我的個人作品集，了解我在創意設計和技術實施方面的專業技能和成功案例。聯繫我以討論您的設計需求。" />
-  <meta property="og:description" content="我是Tanya，擁有十多年網頁設計工作經驗，曾在多家企業擔任設計師。瀏覽我的個人作品集，了解我在創意設計和技術實施方面的專業技能和成功案例。聯繫我以討論您的設計需求。" />
-  <meta name="twitter:description" content="我是Tanya，擁有十多年網頁設計工作經驗，曾在多家企業擔任設計師。瀏覽我的個人作品集，了解我在創意設計和技術實施方面的專業技能和成功案例。聯繫我以討論您的設計需求。" />
-  <meta property="og:url" content="https://tanya756.github.io/portfolio/" />
-  <link rel="canonical" href="https://tanya756.github.io/portfolio/" />
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="scss/portfolio.css">
-
-  <!-- <link rel="stylesheet" href="css/fonts.css"> -->
-  <!-- <link rel="stylesheet" href="../fonts/icon-font.css"> -->
-  <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="css/timeline.css">
-  <link rel="stylesheet" href="css/circle.css">
-  <link rel="stylesheet" href="css/owl.css">
-  <link rel="stylesheet" href="css/aos.css" />
-
+    <meta property="og:type" content="website" />
+    <meta name="description" content="我是Tanya，擁有十多年網頁設計工作經驗，曾在多家企業擔任設計師。瀏覽我的個人作品集，了解我在創意設計和技術實施方面的專業技能和成功案例。聯繫我以討論您的設計需求。" />
+    <meta property="og:description" content="我是Tanya，擁有十多年網頁設計工作經驗，曾在多家企業擔任設計師。瀏覽我的個人作品集，了解我在創意設計和技術實施方面的專業技能和成功案例。聯繫我以討論您的設計需求。" />
+    <meta name="twitter:description" content="我是Tanya，擁有十多年網頁設計工作經驗，曾在多家企業擔任設計師。瀏覽我的個人作品集，了解我在創意設計和技術實施方面的專業技能和成功案例。聯繫我以討論您的設計需求。" />
+    <meta property="og:url" content="https://tanya756.github.io/portfolio/" />
+    <link rel="canonical" href="https://tanya756.github.io/portfolio/" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 5px 15px 5px 5px;
+            border-radius: 25px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        #search-input {
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+        }
+        #search-icon {
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            position: relative;
+            transition: transform 0.1s;
+        }
+        #search-icon-link {
+            text-decoration: none;
+            color: inherit;
+        }
+        #search-icon::before,
+        #search-icon::after {
+            content: '';
+            position: absolute;
+            transition: all 0.3s ease;
+        }
+        #search-icon::before {
+            width: 14px;
+            height: 14px;
+            border: 2px solid #555;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(225deg, transparent 40%, rgba(255,255,255,0.5) 40%);
+        }
+        #search-icon::after {
+            width: 5px;
+            height: 12px;
+            background-color: #555;
+            transform: rotate(-45deg);
+            top: 13px;
+            left: 15px;
+            border-radius: 10px;
+        }
+        #search-icon:hover::before {
+            border-color: #000;
+            box-shadow: 0 0 3px rgba(0,0,0,0.3);
+        }
+        #search-icon:hover::after {
+            background-color: #000;
+            box-shadow: 0 0 3px rgba(0,0,0,0.3);
+        }
+        #search-icon.clicked {
+            transform: scale(0.9);
+        }
+        #text-container {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+        }
+        #cursor {
+            display: inline-block;
+            width: 1px;
+            height: 1.2em;
+            background-color: #000;
+            animation: blink 0.7s infinite;
+            vertical-align: middle;
+        }
+        #mouse-cursor {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            opacity: 0;
+            transition: opacity 0.3s, left 0.5s, top 0.5s;
+            pointer-events: none;
+        }
+        @keyframes blink {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
 </head>
-
-
-<body id="bgcolor">
-  <div class="header">
-    <a href="#aboutme" class="link">About me</a>
-    <a href="#portfolio" class="link">Portfolio </a>
-    <a href="#connect" class="link">connect</a>
-  </div>
-  <div name="aboutme" id="aboutme" class="kv">
-    <div class="left">
-      <img src="images/KV_02.png" alt="">
-      <div class="kvconnecticon">
-        <a href="mailto:ptanya756@gmail.com" class="kvconnecticonbox">
-          <div class="icon icon-envelope"></div>
-          <p>ptanya756@gmail.com</p>
-        </a>
-        <a href="https://www.pinterest.com/peiyi756/" target="_blank" class="kvconnecticonbox">
-          <div class="icon icon-pinterest"></div>
-          <p>Pinterest</p>
-        </a>
-        <a href="https://www.linkedin.com/in/tanya-liu-82996727b/" target="_blank" class="kvconnecticonbox">
-          <div class="icon icon-linkedin"></div>
-          <p>Linkedin Peiyi Liu</p>
-        </a>
-        <a href="https://pda.104.com.tw/profile/share/a3A4L7oWdGlVBHX9wOfaMbeoovJPb7y9" target="_blank"
-          class="kvconnecticonbox">
-          <div class="icon icon-briefcase"></div>
-          <p>104 Peiyi Liu</p>
-        </a>
-        <a href="https://www.instagram.com/p_handmadedesign/" target="_blank" class="kvconnecticonbox">
-          <div class="icon icon-instagram"></div>
-          <p>Instagram</p>
-        </a>
-      </div>
-      <p>正在尋找UI設計師工作，身為一位網頁設計師，深信優秀的UI設計應該與網頁設計無縫結合。</p>
-      <p>擁有多年電商網頁平台網頁設計師經驗，經歷不同部門（設計部、產品部、行銷部）合作共事，一起創造並優化使用者體驗。</p>
-      <p>之前工作大多利用設計思維和網頁切版技術完成頁面，並與產品經理和工程師共同合作，創造出易操作的設計介面面。
-      </p>
-      <p>閒暇之餘喜歡設計皮革商品，放鬆心靈。</p>
-    </div>
-    <div class="right">
-      <img src="images/KV_01.png" alt="">
-    </div>
-  </div>
-  <div class="skill">
-    <div class="title" data-aos="fade-right" data-aos-duration="1000">Skills</div>
-    <div class="skillframe">
-      <div class="skillbox">
-        <!-- partial:index.partial.html -->
-        <figure>
-          <figcaption><img src="images/skill_01.png" alt="" style="margin-bottom: 5px;"><br>UI/UX設計</figcaption>
-          <svg viewBox="0 0 63.6619772368 63.6619772368">
-            <circle class="uiux02" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-            <circle class="uiux01" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-          </svg>
-        </figure>
-        <!-- partial -->
-        <div class="tip">
-          <ul>
-            <li>Figma</li>
-            <li>Sketch</li>
-          </ul>
+<body>
+    <div class="search-container">
+        <input type="text" id="search-input" readonly style="opacity: 0;">
+        <div id="text-container">
+            <span id="typed-text"></span><span id="cursor"></span>
         </div>
-        <div class="describe">
-          <p>統整操作流程</p>
-          <p>設計界面原型</p>
-          <p>交互設計</p>
-        </div>
-      </div>
-      <div class="skillbox">
-        <!-- partial:index.partial.html -->
-
-        <figure>
-          <figcaption><img src="images/skill_02.png" alt="" style="margin-bottom: 5px;"><br>網頁設計</figcaption>
-          <svg viewBox="0 0 63.6619772368 63.6619772368">
-            <circle class="web01" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-            <circle class="web02" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-            <circle class="web03" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-            <circle class="web04" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-          </svg>
-        </figure>
-        <!-- partial -->
-        <div class="tip">
-          <ul>
-            <li>HTML/CSS</li>
-            <li>RWD</li>
-            <li>SCSS</li>
-            <li>jQuery</li>
-          </ul>
-        </div>
-        <div class="describe">
-          <p>使用HTML5 / CSS3</p>
-          <p>RWD 手刻響應式網頁</p>
-          <p>SCSS統整語法統一管理</p>
-          <p>用jQuery網頁互動效果</p>
-        </div>
-      </div>
-      <div class="skillbox">
-        <!-- partial:index.partial.html -->
-        <figure>
-          <figcaption><img src="images/skill_03.png" alt="" style="margin-bottom: 5px;"><br>平面設計</figcaption>
-          <svg viewBox="0 0 63.6619772368 63.6619772368">
-            <circle class="uiux02" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-            <circle class="uiux01" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-          </svg>
-        </figure>
-        <!-- partial -->
-        <div class="tip">
-          <ul>
-            <li>Photoshop</li>
-            <li>Illustator</li>
-          </ul>
-        </div>
-        <div class="describe">
-          <p>網站活動頁編排</p>
-          <p>品牌頁視覺設計</p>
-          <p>社群媒體行銷圖文排版</p>
-          <p>展場活動周邊製作物</p>
-        </div>
-      </div>
-
-
+        <div id="search-icon"></div>
+        <svg id="mouse-cursor" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 1.5L13.5 30.5L16.5 18.5L30.5 15.5L1.5 1.5Z" fill="white" stroke="black" stroke-width="2"/>
+        </svg>
     </div>
 
-  </div>
-  <div class="experience">
-    <div class="title" data-aos="fade-right" data-aos-duration="1000">Experience</div>
-    <section class="timeline">
-      <ul>
-        <li>
-          <div>
-            <time>2023/9~至今</time>
-            <company>網頁設計/凱基證券股份有限公司</company>
-            <p>行銷活動頁設計與切版，並結合響應式設計</p>
-            <p>維護官網營運與更新</p>
-            <p>行銷活動視覺設計與各平台露出的廣告</p>
-            <p>活動設計輸出(邀請卡、背板、DM、立牌....)</p>
-            <p>EDM電子報視覺設計</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>2017/7~2022/12</time>
-            <company>網頁設計/連科通訊股份有限公司</company>
-            <p>維護官網營運與更新（PchomeThai / Skype /PchomeSEA / Lingvist） </p>
-            <p>產品設計 (PchomeThai) 設計支援
-            <p>官網活動頁設計與切版，並結合響應式設計</p>
-            <p>品牌頁設計發想與頁面切版</p>
-            <p>行銷活動視覺設計與各平台露出的廣告</p>
-            <p>展場活動周邊商品設計</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>2016/10~2017/3</time>
-            <company>網頁設計/Onelab 瑞嘉科技</company>
-            <p>活動視覺設計，並產出多國語系排版</p>
-            <p>利用用戶測試和反饋收集，官網優化設計</p>
+    <script>
+        const searchInput = document.getElementById('search-input');
+      const searchIcon = document.getElementById('search-icon');
+      const typedText = document.getElementById('typed-text');
+      const textCursor = document.getElementById('cursor');
+      const mouseCursor = document.getElementById('mouse-cursor');
 
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>2016/４~2016/９</time>
-            <company>網頁設計/91App九易宇軒股份有限公司</company>
-            <p>維護官網營運與更新</p>
-            <p>官網活動頁設計與切版，並結合響應式設計</p>
-            <p>活行銷活動視覺設計與各平台露出的廣告</p>
-            <p>活動場刊佈景設計輸出(邀請卡、背板、DM、立牌....)</p>
+      function typeText(text, index = 0) {
+          if (index < text.length) {
+              typedText.textContent += text[index];
+              searchInput.value += text[index];
+              setTimeout(() => typeText(text, index + 1), 200);
+          } else {
+              setTimeout(showMouseCursor, 500);
+          }
+      }
 
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>2011/11~2015/2</time>
-            <company>網頁設計/FG風尚數位科技股份有限公司</company>
-            <p>官網活動頁設計與切版</p>
-            <p>行銷活動視覺設計與各平台露出的廣告</p>
-            <p>EDM電子報視覺設計</p>
-            <p>展公司雜誌平面設計輸出</p>
+      function showMouseCursor() {
+          textCursor.style.display = 'none';
+          mouseCursor.style.opacity = '1';
+          mouseCursor.style.left = '50%';
+          mouseCursor.style.top = '50%';
+          
+          setTimeout(() => {
+              const iconRect = searchIcon.getBoundingClientRect();
+              const containerRect = searchIcon.parentElement.getBoundingClientRect();
+              
+              mouseCursor.style.left = `${iconRect.left - containerRect.left + iconRect.width / 2}px`;
+              mouseCursor.style.top = `${iconRect.top - containerRect.top + iconRect.height / 2}px`;
+              
+              setTimeout(clickSearchIcon, 1000);
+          }, 1000);
+      }
 
-          </div>
-        </li>
-      </ul>
-    </section>
-  </div>
-  <div name="portfolio" id="portfolio" class="portfolio">
-    <div class="title" data-aos="fade-left" data-aos-duration="1000">Portfolio</div>
-    <div class="portfolioframe">
-      <div class="headline">UI/UX</div>
-      <div class="portfoliocontent">
-        <div class="portfoliobox">
-          <img src="images/portfolio_03.png" alt="">
-          <div class="text">Pchome Thai_活動版型設計</div>
-          <div class="button">
-            <a href="web-thai.html" target="_blank" class="btn">Demo</a>
-            <a href="https://www.pchome.co.th/campaign/fragrance.html" target="_blank" class="btn">Online</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_02.png" alt="">
-          <div class="text">APP優化_台北等公車</div>
-          <div class="button">
-            <a href="uiux-bus.html" target="_blank" class="btn">Demo</a>
-            <a href="https://www.figma.com/proto/pdzygl96fwtNHEnh5GzUPk/bus?type=design&node-id=18-1748&scaling=scale-down&page-id=0%3A1&starting-point-node-id=18%3A1748"
-              target="_blank" class="btn">Prototype</a>
-          </div>
-        </div>
-      </div>
-      <div class="headline">Web</div>
-      <div class="portfoliocontent">
-        <div class="portfoliobox">
-          <img src="images/portfolio_18.png" alt="">
-          <div class="text">凱基證券-雙利帳戶</div>
-          <div class="button">
-            <a href="https://github.com/tanya756/2024-interest" target="_blank" class="btn">GitHub</a>
-            <a href="https://tanya756.github.io/2024-interest/" target="_blank" class="btn">Demo</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_17.png" alt="">
-          <div class="text">凱基證券-e智慧</div>
-          <div class="button">
-            <a href="https://github.com/tanya756/conditional-order" target="_blank" class="btn">GitHub</a>
-            <a href="https://tanya756.github.io/conditional-order/" target="_blank" class="btn">Demo</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_16.png" alt="">
-          <div class="text">凱基證券-零股聰明買實現小額投資</div>
-          <div class="button">
-            <a href="https://github.com/tanya756/small-invest" target="_blank" class="btn">GitHub</a>
-            <a href="https://tanya756.github.io/small-invest/" target="_blank" class="btn">Demo</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_15.png" alt="">
-          <div class="text">凱基證券-2024展望未來</div>
-          <div class="button">
-            <a href="https://github.com/tanya756/strategy" target="_blank" class="btn">GitHub</a>
-            <a href="https://tanya756.github.io/strategy/" target="_blank" class="btn">Demo</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_14.png" alt="">
-          <div class="text">凱基證券-海外債</div>
-          <div class="button">
-            <a href="https://github.com/tanya756/offshore-bond" target="_blank" class="btn">GitHub</a>
-            <a href="https://tanya756.github.io/offshore-bond/" target="_blank" class="btn">Demo</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_13.png" alt="">
-          <div class="text">凱基證券-開戶</div>
-          <div class="button">
-            <a href="https://github.com/tanya756/OOA/" target="_blank" class="btn">GitHub</a>
-            <a href="https://tanya756.github.io/OOA/" target="_blank" class="btn">Demo</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_12.png" alt="">
-          <div class="text">凱基證券-金融憑證報稅</div>
-          <div class="button">
-            <a href="https://github.com/tanya756/tax" target="_blank" class="btn">GitHub</a>
-            <a href="https://tanya756.github.io/tax/" target="_blank" class="btn">Demo</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_11.png" alt="">
-          <div class="text">Lingvist語言學習官網</div>
-          <div class="button">
-            <a href="https://github.com/tanya756/webdesign-lingvist" target="_blank" class="btn">GitHub</a>
-            <a href="https://tanya756.github.io/webdesign-lingvist/" target="_blank" class="btn">Demo</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_10.png" alt="">
-          <div class="text">PChome x Siam Piwat聯名手提袋</div>
-          <div class="button">
-            <a href="https://github.com/tanya756/webdesign-siam" target="_blank" class="btn">GitHub</a>
-            <a href="https://tanya756.github.io/webdesign-siam/" target="_blank" class="btn">Demo</a>
-            <a href="https://www.pchome.co.th/event/brand/pha-khao-ma/" target="_blank" class="btn">Online</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_09.png" alt="">
-          <div class="text">品牌頁設計_Scotch 士國牌燕窩</div>
-          <div class="button">
-            <a href="https://github.com/tanya756/webdesign-scotch" target="_blank" class="btn">GitHub</a>
-            <a href="https://tanya756.github.io/webdesign-scotch/" target="_blank" class="btn">Demo</a>
-            <a href="https://www.pchome.co.th/event/brand/scotch/" target="_blank" class="btn">Online</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_05.png" alt="">
-          <div class="text">品牌頁設計_kiss me doll絲巾</div>
-          <div class="button">
-            <a href="https://github.com/tanya756/webdesign-kissmedoll" target="_blank" class="btn">GitHub</a>
-            <a href="https://tanya756.github.io/webdesign-kissmedoll/" target="_blank" class="btn">Demo</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_04.png" alt="">
-          <div class="text">品牌頁設計_Beauty Community護膚</div>
-          <div class="button">
-            <a href="https://github.com/tanya756/webdesign-beautycommunity" target="_blank" class="btn">GitHub</a>
-            <a href="https://tanya756.github.io/webdesign-beautycommunity/" target="_blank" class="btn">Demo</a>
-            <a href="https://www.pchome.co.th/event/brand/beautycommunity/" target="_blank" class="btn">Online</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_06.png" alt="">
-          <div class="text">品牌頁設計_Journal香氛</div>
-          <div class="button">
-            <a href="https://github.com/tanya756/webdesign-journal" target="_blank" class="btn">GitHub</a>
-            <a href="https://tanya756.github.io/webdesign-journal/" target="_blank" class="btn">Demo</a>
-            <a href="https://www.pchome.co.th/event/brand/journal/" target="_blank" class="btn">Online</a>
-          </div>
-        </div>
-      </div>
-      <div class="headline">Print</div>
-      <div class="portfoliocontent">
-        <div class="portfoliobox">
-          <img src="images/portfolio_07.png" alt="">
-          <div class="text">展場佈置_邀請卡</div>
-          <div class="button">
-            <a href="" target="_blank" class="btn">Demo</a>
-          </div>
-        </div>
-        <div class="portfoliobox">
-          <img src="images/portfolio_08.png" alt="">
-          <div class="text">中秋賀卡</div>
-          <div class="button">
-            <a href="" target="_blank" class="btn">Demo</a>
-          </div>
-        </div>
-      </div>
-      <div class="headline">Visual</div>
-      <!-- partial:index.partial.html -->
-      <div class="carousel-wrap">
-        <div class="owl-carousel">
-          <div class="item"><img src="images/visual_01.jpg"></div>
-          <div class="item"><img src="images/visual_02.jpg"></div>
-          <div class="item"><img src="images/visual_03.jpg"></div>
-          <div class="item"><img src="images/visual_04.jpg"></div>
-          <div class="item"><img src="images/visual_05.jpg"></div>
-          <div class="item"><img src="images/visual_06.jpg"></div>
-          <div class="item"><img src="images/visual_07.jpg"></div>
-          <div class="item"><img src="images/visual_08.jpg"></div>
-          <div class="item"><img src="images/visual_09.jpg"></div>
-          <div class="item"><img src="images/visual_10.jpg"></div>
-          <div class="item"><img src="images/visual_11.jpg"></div>
-          <div class="item"><img src="images/visual_12.jpg"></div>
-          <div class="item"><img src="images/visual_13.jpg"></div>
-          <div class="item"><img src="images/visual_14.jpg"></div>
-        </div>
-      </div>
+      function clickSearchIcon() {
+          searchIcon.classList.add('clicked');
+          setTimeout(() => {
+              searchIcon.classList.remove('clicked');
+              console.log('Search icon clicked for: ' + searchInput.value);
+              // 添加跳轉到 aboutme.html 的邏輯
+              redirectToAboutMe();
+          }, 200);
+      }
 
+      function redirectToAboutMe() {
+          // 使用短暫的延遲來確保視覺效果完成
+          setTimeout(() => {
+              window.location.href = 'aboutme.html';
+          }, 100);
+      }
 
+      setTimeout(() => {
+          typeText('Tanya');
+      }, 1000);
 
-
-
-    </div>
-
-  </div>
-  <footer>
-    <div name="connect" id="connect" class="connect">
-      <a href="mailto:ptanya756@gmail.com" class="connectbox">
-        <div class="icon icon-envelope"></div>
-        <p>ptanya756@gmail.com</p>
-      </a>
-      <a href="https://www.linkedin.com/in/tanya-liu-82996727b/" target="_blank" class="connectbox">
-        <div class="icon icon-linkedin"></div>
-        <p>Linkedin Peiyi Liu</p>
-      </a>
-      <a href="https://pda.104.com.tw/profile/share/a3dMt7BtTbyMhHGYTf2s8IcLgNp3rj4J" target="_blank"
-        class="connectbox">
-        <div class="icon icon-briefcase"></div>
-        <p>104 Peiyi Liu</p>
-      </a>
-    </div>
-    <div class="copyright">
-      Copyright © 2023 All rights reserved by Tanya
-    </div>
-
-  </footer>
-
-
-  <!-- timeline.js-->
-  <script src="js/timeline.js"></script>
-  <!-- owl.js-->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js'></script>
-  <script src='https://use.fontawesome.com/826a7e3dce.js'></script>
-  <script src="js/owl.js"></script>
-  <!--aos.js-->
-  <script src="js/aos.js"></script>
-  <script>
-    AOS.init({
-      easing: 'ease-in-out-sine'
-    });
-  </script>
-
+      // 可選：如果您想讓搜索圖標可點擊
+      searchIcon.addEventListener('click', function() {
+          if (typedText.textContent === 'Tanya') {
+              redirectToAboutMe();
+          }
+      });
+    </script>
 </body>
-
 </html>

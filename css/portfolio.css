@@ -103,6 +103,7 @@ body .kv h1 {
 body .intro {
   background-color: #e8e8e8;
   position: relative;
+  overflow: hidden;
 }
 body .intro .container {
   display: -webkit-box;

@@ -98,6 +98,7 @@ body{
     .intro{
         background-color: $color-primary;
         position: relative;
+        overflow: hidden;
         .container{
             display: flex;
             flex-direction: column;

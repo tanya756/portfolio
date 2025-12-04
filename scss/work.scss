@@ -1,0 +1,90 @@
+@import url("reset.css");
+* {
+    font-family: "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei", "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif","蘋方-繁";
+      font-size: 16px;
+      color: #303030;
+  }
+
+
+body{
+    background-color: #eaeaea;
+}
+.portfolio{
+    &_frame{
+        max-width: 1980px;
+        margin: auto;
+        h3{
+            text-align: center;
+            margin: 80px 0 40px 0;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+    }
+    &_content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;    
+        justify-content: center;
+        p{
+            margin-bottom: 10px;
+        }
+        .button{
+            display: flex;
+            gap: 10px;
+            .btn {
+                position: relative;
+                overflow: hidden;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 1px solid #000;
+                font-size: 1.25em;
+                color: #000;
+                transition: color .3s ease;
+                text-decoration: none;
+                border: 1px solid transparent;
+                border-image: linear-gradient(314deg, #000000, #b4b5b5, #000000) 1;
+            }
+            
+            .btn::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 0%;
+                height: 100%;
+                background: #000;
+                z-index: -1;
+                transition: width .3s ease;
+            }
+            
+            .btn:hover::before {
+                width: 100%; /* 從左滑到右 */
+            }
+            
+            .btn:hover {
+                color: #fff;
+            }
+        }
+    }
+    &_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 100%;
+        }
+    }
+    .UIUX img{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
